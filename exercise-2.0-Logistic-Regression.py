@@ -163,8 +163,6 @@ X_grid = np.c_[np.ravel(xx1), np.ravel(xx2) ]
 X_grid = poly_features(X_grid,6)
 h = sigmoid( X_grid.dot(reg_logistic_regression.x) )
 h = h.reshape(xx1.shape)
-h = sigmoid( X_grid.dot(reg_logistic_regression.x) )
-h = h.reshape(xx1.shape)
 
 plt.contour(xx1, xx2, h, [0.5], linewidths=1, colors='chartreuse')
 
